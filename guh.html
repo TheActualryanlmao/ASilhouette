@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VYRESNYSIS BROLIS</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #silhouette {
+            width: 200px;
+            height: auto;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <img id="silhouette" src="Goobloo.png" alt="Silhouette">
+    <audio id="audio" src="findher.mp3"></audio>
+
+    <script>
+        const silhouette = document.getElementById('silhouette');
+        const audio = document.getElementById('audio');
+
+        silhouette.addEventListener('click', () => {
+            audio.play();
+        });
+    </script>
+</body>
+</html>
